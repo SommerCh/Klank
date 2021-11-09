@@ -404,18 +404,16 @@ h3 {
 }
 
 /* Isabella fortæller  */
-button {
-    border: none
-}
-
 .isabella-lyd {
     display: block;
     border-radius: 8px;
     background-color: white;
     text-align: center;
     margin: 2.5% auto 0 auto;
-    padding: 20px;
+    padding: 2px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border: solid 1px black;
+    width: 22%;
 }
 
 audio::-webkit-media-controls-play-button,
