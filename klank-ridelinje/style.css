@@ -1,0 +1,573 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:700");
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* farver
+lys: #f9e45b
+daisy: #6db784
+blå: #1b4d89
+mørk grøn: #373f27
+*/
+body {
+    font-family: Raleway, sans-serif;
+    margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.shadow {
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    background: white;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, lightgrey 100%);
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 500;
+}
+
+.logo {
+    margin: 0 auto;
+}
+
+/* ikoner */
+.medier a img {
+    width: 10%;
+}
+
+.medier {
+    position: absolute;
+    width: 20%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* baggrunds video */
+#banner-video {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* forside titel */
+.title {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-size: 15vw;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: white;
+    mix-blend-mode: screen;
+    letter-spacing: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1 {
+    font-size: 6rem;
+    margin: 2% auto;
+}
+
+h2 {
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+.wrapper {
+    position: relative;
+}
+
+/* runde icon på tisalinjen */
+.timeline {
+    width: 2rem;
+    height: 2rem;
+    background-color: black;
+    border-radius: 50%;
+    top: -0.9rem;
+    position: relative;
+}
+
+/* tidslinje */
+.timeline-track {
+    position: fixed;
+    top: calc(100vh - 20px);
+    left: 1rem;
+    width: calc(100% - 2rem);
+    height: 0.4rem;
+    background-color: black;
+}
+
+section h1,
+section h2 {
+    position: sticky;
+    top: 1rem;
+    left: 0;
+}
+
+.middle {
+    position: relative;
+    background: linear-gradient(0deg, white 0%, lightgrey 100%);
+    width: 100%;
+    height: 30vh;
+    padding: 20px;
+}
+
+/* pile i middle-sektioner */
+.shape {
+    position: absolute;
+    z-index: 2;
+}
+
+/* forside */
+.section-1 {
+    background-size: cover;
+    min-height: 100vh;
+    padding: 1rem;
+    position: relative;
+}
+
+/* sektion 2 */
+.section-2 {
+    background-color: white;
+    min-height: 100vh;
+    padding: 1rem;
+    position: relative;
+}
+
+.vid {
+    position: relative;
+    text-align: center;
+}
+
+#video-s2 {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border: solid 3px black;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.youtube {
+    display: none;
+}
+
+/* sektion 3 */
+.section-3 {
+    min-height: 100vh;
+    background-color: white;
+    padding: 0 0 150px 0;
+}
+
+/* galleri */
+.gallery {
+    width: 80%;
+    margin: 0 auto 0 20%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hest {
+    position: relative;
+    width: 15%;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    cursor: zoom-in;
+}
+
+.hest img {
+    width: 100%;
+    border: 8px solid #fff;
+    border-radius: 100%;
+    box-shadow: 1px 4px 12px rgba(0, 0, 0, 0.4);
+    transition: 1s ease;
+}
+
+.hest img:hover {
+    transform: scale(1.7);
+    z-index: 2;
+}
+
+.theta-wrapper {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.theta360 {
+    display: block;
+    max-width: 880px;
+    width: 100%;
+    height: 500px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border: solid 8px white;
+}
+
+/* sektion 4 */
+.section-4 {
+    min-height: 100vh;
+    background-color: white;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.box-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 35px 15px;
+    width: 70%;
+    color: #fff;
+    margin: 0 auto;
+}
+
+.box-item {
+    position: relative;
+    width: 27%;
+    align-items: center;
+}
+
+.flip-box {
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.flip-box-front,
+.flip-box-back {
+    background-color: grey;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    min-height: 420px;
+    transition: transform 0.7s cubic-bezier(.4, .2, .2, 1);
+    backface-visibility: hidden;
+}
+
+.flip-box-front {
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-front {
+    transform: rotateY(-180deg);
+    transform-style: preserve-3d;
+}
+
+.flip-box-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-back {
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+}
+
+.flip-box .inner {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    outline: 1px solid transparent;
+    perspective: inherit;
+    z-index: 2;
+    transform: translateY(-50%) translateZ(60px) scale(.94);
+    top: 50%;
+    text-align: center;
+    padding: 10px;
+}
+
+.flip-box-front .inner {
+    margin: 100px auto 0 auto;
+}
+
+.flip-box-header {
+    font-size: 34px;
+}
+
+.flip-box p {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 3px;
+    font-weight: 900;
+}
+
+.flip-box-img {
+    margin: 0 auto;
+}
+
+/* heste tapet */
+.heste-tapet {
+    width: 100%;
+    padding-top: 75%;
+    position: relative;
+    overflow: hidden;
+}
+
+.smallhest {
+    background-image: url(images/david-glad.png);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 2000%;
+    background-size: 2%;
+    animation: floatSmall 360s linear infinite alternate;
+    filter: blur(1.5px) grayscale(100%);
+    width: 400%;
+    opacity: 0.7;
+}
+
+.mediumhest {
+    background-image: url(images/david.gif);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 2000%;
+    background-size: 12%;
+    animation: floatMedium 180s linear infinite alternate;
+    filter: blur(1px) grayscale(100%);
+    width: 200%;
+}
+
+.largehest {
+    background-image: url(images/hest.png);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 2000%;
+    background-size: 12%;
+    animation: floatLarge 90s linear infinite alternate;
+    width: 800%;
+}
+
+@keyframes floatSmall {
+    to {
+        transform: translateY(95%) translateX(30%);
+    }
+}
+
+@keyframes floatMedium {
+    to {
+        transform: translateY(95%) translateX(25%);
+    }
+}
+
+@keyframes floatLarge {
+    to {
+        transform: translateY(95%) translateX(12.5%);
+    }
+}
+
+
+/* sektion 5 */
+.section-5 {
+    min-height: 50vh;
+}
+
+.pin-spacer {
+    display: none;
+}
+
+.adr {
+    margin: 0 auto;
+    width: 20%;
+    font-size: 20px;
+}
+
+/* Isabella fortæller  */
+button {
+    border: none
+}
+
+.isabella-lyd {
+    display: block;
+    border-radius: 8px;
+    background-color: white;
+    text-align: center;
+    margin: 2.5% auto 0 auto;
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-panel {
+    color: #000;
+    background-color: white;
+}
+
+h4 {
+    font-size: 20px;
+    font-family: Impact;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+/* mobil */
+@media screen and (min-width:1380px) {
+    .box-container {
+        flex-direction: row
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    .wrapper {
+        overflow-x: hidden !important;
+    }
+
+    #header {
+        padding: 20px 0;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .medier {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        padding: 10px 0;
+        background-color: white;
+        transform: none !important;
+    }
+
+    .medier a img {
+        width: 15%;
+    }
+
+    .logo {
+        margin: 5% auto 0 auto;
+        width: 80%;
+    }
+
+
+    /* sektion 1 */
+    .section-1 {
+        min-height: 70vh;
+    }
+
+    .title {
+        letter-spacing: 5px;
+        height: 80vh;
+    }
+
+    #banner-video {
+        height: 50vh;
+    }
+
+    .timeline,
+    .timeline-track {
+        display: none;
+    }
+
+    .middle {
+        position: sticky;
+        height: 15vh;
+    }
+
+    .shape {
+        position: sticky;
+        z-index: 2;
+        width: 100%;
+        transform: rotate(180deg) !important;
+    }
+
+
+    /* sektion 2 */
+    #video-s2 {
+        display: none;
+    }
+
+    .youtube {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        height: 40vh;
+    }
+
+
+    /* sektion 3 */
+    .gallery {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .hest img:hover {
+        transform: scale(1.2);
+        z-index: 2;
+    }
+
+    .hest {
+        width: 80%;
+    }
+
+    .theta360 {
+        display: block;
+        margin: 20px auto;
+        width: 300px;
+        height: 300px
+    }
+
+
+    /* sektion 4 */
+    .heste-tapet {
+        padding-top: 150%;
+    }
+
+    .text {
+        text-align: center;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+
+    .smallhest {
+        background-size: 20%;
+        opacity: 0.9;
+    }
+
+    .mediumhest {
+        background-size: 15%;
+        width: 400%;
+    }
+
+
+    /* sektion 5 */
+    .adr {
+        margin: 20px auto;
+        width: 80%;
+        font-size: 20px;
+        text-align: center;
+    }
+}
